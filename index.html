@@ -543,7 +543,7 @@ function processPayment() {
   document.getElementById('s3-payment').textContent = 'Payment via: '+payLabels[payMode];
   document.getElementById('s3-total').textContent = '₹'+cartTotal();
 
-  fetch("https://script.google.com/macros/s/AKfycbw8cHMgbD3YgFF2O4DPk7xvc9AqlaDRmvGIe9glm8dIqs4JIibsevphkJZ6G9KAvmc/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbxsWsTCxaZMW5lcV7k3SA9l6T2fsgVO1jcgB0W3ovb3NwpsKLf9arTJbHvd_9HA-5_Z/exec", {
     method: "POST",
     body: JSON.stringify({
       name: fname + " " + lname,
